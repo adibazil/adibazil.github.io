@@ -1,46 +1,155 @@
-body,
-html {
-  width: 100%;
-  height: 100%;
-}
-header.startup{
-	background-position: center;
-	background-image: url("header.jpg");
-	background-size: cover;
-	height: 100%;
-	width: 100%;
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
 
 }
-header.startup hr{
-	margin-top: 200px;
-	margin-bottom: 30px;
+
+.robots {
 }
 
-header.startup h1{
-	font-size: 2rem;
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color: #f93437;
 }
 
-hr{
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 160px; 
+	border-radius: 250px 250px 0 0; 
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 5px 0px black;
+} 
 
-    overflow: visible; /* For IE */
-    height: 30px;
-    border-style: solid;
-    border-color: pink;
-    border-width: 2px 0 0 0;
-    border-radius: 50px;
+.eyes {
+	
+}
 
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+    box-shadow: 5px 5px 2px 0px black;
 }
-.btn{
-	text-transform: uppercase;
-	border-radius: 200px;
-	font-weight: 500;
 
+.upper_body { 
+	width: 950px; 
+	margin:0 auto;
+	height: 150px;
+	display: flex; 
+	justify-content: center;
+
+
+	
+	
+	
+
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 140px;
+	border-radius: 100px 120px 150px 100px; 
+	box-shadow: 5px 5px 5px 0px black;
+	
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+	
+} 
+.left_arm:hover{
+	transform: rotate(10deg);
 }
-.btn-primary{
-	background-color: grey;
-	border-color: white;
+
+.right_arm { 
+	margin-left: 10px; 
+	
+} 
+.right_arm:hover{
+	transform: rotate(-20deg);
 }
-.btn-primary{
-	background-color: red;
-	border-color: magenta;
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+	box-shadow: 5px 5px 5px 0px black;
+
+	
+
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;
+
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 150px 100px; 
+	box-shadow: 5px 5px 5px 0px black;
+} 
+
+
+
+.left_leg { 
+	margin-left: 120px; 
+	margin-bottom: -120px;
+	margin-top: 30px;
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(-20deg);
 }
+
+
+
+
+.right_leg { 
+	margin-left: 40px; 
+	
+}
+.right_leg:hover {
+	transform: rotate(10deg);
+}
+
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: yellow;  
+	box-shadow: 5px 5px 5px 0px black;
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 80px; 
+	left: 130px; 
+}
+
+
+
+
+
